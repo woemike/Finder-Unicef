@@ -1,0 +1,242 @@
+<html>
+<head>
+	<style>
+
+	div
+	{
+    	border-radius: 200px;
+    	box-shadow:none
+	}
+
+ 	body
+ 	{
+ 		background-image: url('back.jpg');
+ 	}
+
+ 	
+	div:hover, div:active 
+	{
+  		box-shadow: 0 0 10px #000000, inset 0 0 15px #FFFFFF;
+	}
+
+	#noStyle {
+
+	}
+
+	/* #### bootstrap Form #### */
+.bootstrap-frm {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    
+    
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.bootstrap-frm h1 {
+    font: 50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+.bootstrap-frm h1>span {
+    display: block;
+    font-size: 11px;
+}
+.bootstrap-frm label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.bootstrap-frm label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm textarea, .bootstrap-frm select{
+    border: 1px solid #CCC;
+    color: #888;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.bootstrap-frm select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height:15px;
+}
+.bootstrap-frm textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.bootstrap-frm .button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+}
+.bootstrap-frm .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+p
+{
+	font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#map-canvas 
+{ 
+height: 400px; 
+width: 500px;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-i0og{color:#000000}
+.tg .tg-79v0{background-color:#00d2cb}
+
+	
+  </style>
+
+</head>
+<body>
+	<div style="float:left;width:50%;height:100%;background: rgba(0, 0, 0, 0.2);margin-right:17px;position:relative;">
+		<form class="bootstrap-frm" style="text-align:center;">
+    	
+     
+		<br><br>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Name">
+        <br>
+        
+
+        <label for="age">Aproximate age:</label>
+        <input id="age" type="text" placeholder="Age">
+        <br>
+        
+
+        <label for="keywords">Keywords:</label>
+        <textarea cols=20 rows=10>Enter keywords here.
+        </textarea>
+        <br>
+
+        <iframe src="geolocation.html">
+        </iframe><br><br>
+        <a href="page2result.html"><div class="btn"> Send! </div></a>
+	</div>
+
+	
+
+	
+		<br><br><br><br>
+		<br>
+		&nbsp&nbsp&nbsp<table class="tg">
+  <tr>
+    <th class="tg-79v0">Name</th>
+    <th class="tg-79v0">DoB</th>
+    <th class="tg-79v0">Date of entry</th>
+    <th class="tg-79v0">Place</th>
+    <th class="tg-79v0">Missing/Found</th>
+    <th class="tg-79v0">Photo</th>
+    <th class="tg-79v0">Keywords</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">Abeni</td>
+    <td class="tg-031e">24.11.2005</td>
+    <td class="tg-031e">04.07.2014</td>
+    <td class="tg-031e">Praetoria</td>
+    <td class="tg-031e">Missing</td>
+    <td class="tg-031e">null</td>
+    <td class="tg-031e">birth mark, back, left side</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Dakani</td>
+    <td class="tg-031e">9.01.2007</td>
+    <td class="tg-031e">21.08.2014</td>
+    <td class="tg-031e">Oman</td>
+    <td class="tg-031e">Missing</td>
+    <td class="tg-031e"><img src="dakani.jpg" width=50px height=50px></td>
+    <td class="tg-031e">left arm, scar</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">Abeni</td>
+    <td class="tg-031e">24.11.2005</td>
+    <td class="tg-031e">24.11.2014</td>
+    <td class="tg-031e">Johannesburg</td>
+    <td class="tg-031e">Found</td>
+    <td class="tg-031e"></td>
+    <td class="tg-i0og">null</td>
+  </tr>
+</table>
+
+<a href="index.html">
+	<div style="float:left;top:550px;left:850px;width:100px;height:40px;background: rgba(0,0,0,0.2);position:absolute;border-radius:20px;display:inline-flex">
+		<p style="vertical-align:top;margin:auto 5px;">&nbsp&nbsp&nbsp&nbspBack </p>
+	</div>
+</a>
+</body>
+</html>

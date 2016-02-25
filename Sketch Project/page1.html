@@ -1,0 +1,222 @@
+<html>
+<head>
+	<style>
+
+	div
+	{
+    	border-radius: 200px;
+    	box-shadow:none
+	}
+
+ 	body
+ 	{
+ 		background-image: url('back.jpg');
+ 	}
+
+ 	
+	div:hover, div:active 
+	{
+  		box-shadow: 0 0 10px #000000, inset 0 0 15px #FFFFFF;
+	}
+
+	#noStyle {
+
+	}
+
+	/* #### bootstrap Form #### */
+.bootstrap-frm {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    
+    
+    font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.bootstrap-frm h1 {
+    font: 50px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom: 1px solid #DADADA;
+    margin: -10px -30px 30px -30px;
+    color: #888;
+}
+.bootstrap-frm h1>span {
+    display: block;
+    font-size: 11px;
+}
+.bootstrap-frm label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.bootstrap-frm label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.bootstrap-frm input[type="text"], .bootstrap-frm input[type="email"], .bootstrap-frm textarea, .bootstrap-frm select{
+    border: 1px solid #CCC;
+    color: #888;
+    height: 20px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 5px 0px 5px 5px;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;    
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.bootstrap-frm select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height:15px;
+}
+.bootstrap-frm textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.bootstrap-frm .button {
+    background: #FFF;
+    border: 1px solid #CCC;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 4px;
+}
+.bootstrap-frm .button:hover {
+    color: #333;
+    background-color: #EBEBEB;
+    border-color: #ADADAD;
+}
+p
+{
+	font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#map-canvas 
+{ 
+height: 400px; 
+width: 500px;
+}
+
+
+
+
+
+	
+  </style>
+
+	
+	
+</head>
+<body onload="getLocation()">
+	<div style="float:left;width:29%;height:50%;background: rgba(0, 0, 0, 0.2);top:150px;margin-right:70px;margin-left:25px;position:relative;">
+		<h1><font color="white"><center> UPLOAD </center></font></h1>
+		<form><center><input type="file"><center><img src="upload.png" width="50%" height="50%"></center></input></form>
+	</div>
+
+	
+	
+
+
+	<div style="float:left;width:59%;height:100%;background: rgba(0, 0, 0, 0.2);position:relative;">
+		
+			
+	
+		<form class="bootstrap-frm" style="text-align:center;">
+    	
+     
+
+        <label for="name">Name:</label>
+        <input rows=2 id="name" type="text" placeholder="Name" size="40">
+        <br>
+        
+
+        <label for="age">Aproximate age:</label>
+        <input id="age" type="text" placeholder="Age">
+        <br>
+        
+
+        <label for="description">Description:</label>
+        <textarea cols=20 rows=20>Enter description here.
+        </textarea>
+        <br>
+
+        <iframe src="geolocation.html">
+        </iframe>
+        <br><br><br>
+    
+        
+        
+        
+
+        
+        
+        <a href="page1result.html"><div class="btn"> Send! </div></a>
+    
+</form>
+	
+	
+	</div>
+	<a href="index.html">
+	<div style="float:left;top:550px;left:180px;width:100px;height:40px;background: rgba(0,0,0,0.2);position:absolute;border-radius:20px;display:inline-flex">
+		<p style="vertical-align:top;margin:auto 5px;">&nbsp&nbsp&nbsp&nbspBack </p>
+	</div>
+</a>
+
+	
+</body>
+</html>
